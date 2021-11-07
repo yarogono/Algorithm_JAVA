@@ -6,8 +6,6 @@ public class baek10829 {
     // baek 10829 : https://www.acmicpc.net/problem/10829
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
         long inputNum = Long.parseLong(br.readLine());
         ArrayList<Long> numArrList = new ArrayList<>();
 
