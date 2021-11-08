@@ -20,10 +20,4 @@ public class programmers13 {
 
         return answer;
     }
-
-
-    public static void main(String[] args) {
-        programmers13 test = new programmers13();
-        System.out.println(test.solution(5, 3));
-    }
 }
