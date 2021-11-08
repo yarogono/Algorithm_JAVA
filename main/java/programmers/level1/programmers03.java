@@ -1,7 +1,7 @@
 package programmers.level1;
 
 public class programmers03 {
-    // 프로그래머스 짝수와 홀수 => https://programmers.co.kr/learn/courses/30/lessons/12903
+    // 프로그래머스 가운데 글자 가져오기 => https://programmers.co.kr/learn/courses/30/lessons/12903
     public String solution(String s) {
         String answer = "";
         if(s.length() % 2 == 0) {
