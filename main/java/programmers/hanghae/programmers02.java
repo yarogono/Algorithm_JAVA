@@ -1,4 +1,4 @@
-package programmers.level1;
+package programmers.hanghae;
 
 public class programmers02 {
     // 프로그래머스 짝수와 홀수 => https://programmers.co.kr/learn/courses/30/lessons/12937

@@ -1,4 +1,4 @@
-package programmers.level1;
+package programmers.hanghae;
 import java.util.Scanner;
 
 public class programmers01 {

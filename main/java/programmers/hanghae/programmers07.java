@@ -1,4 +1,4 @@
-package programmers.level1;
+package programmers.hanghae;
 
 public class programmers07 {
     // 프로그래머스 음양 더하기 => https://programmers.co.kr/learn/courses/30/lessons/76501
