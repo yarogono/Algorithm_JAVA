@@ -17,9 +17,4 @@ public class programmers28 {
 
         return answer;
     }
-
-    public static void main(String[] args) {
-        programmers28 test = new programmers28();
-        test.solution(10);
-    }
 }
