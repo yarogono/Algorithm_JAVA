@@ -20,17 +20,17 @@ public class programmers26 {
             }
         }
 
-        ArrayList<Integer> sb = new ArrayList<>();
+        ArrayList<Integer> arrInt = new ArrayList<>();
 
         for(int i = 0; i < arr.length; i++) {
             if(arr[i] != minNum) {
-                sb.add(arr[i]);
+                arrInt.add(arr[i]);
             }
         }
-        answer = new int[sb.size()];
+        answer = new int[arrInt.size()];
 
         for(int i = 0; i < answer.length; i++) {
-            answer[i] = sb.get(i);
+            answer[i] = arrInt.get(i);
         }
 
         return answer;
