@@ -11,7 +11,7 @@ public class programmers23_1 {
         StringBuffer sb = new StringBuffer();
 
         for(int i = 0; i < inputStr.length(); i++) {
-            sb.append(inputStr.charAt(i));
+            sb.append(Character.getNumericValue(sb.charAt(i)));
         }
 
         sb.reverse();
@@ -19,7 +19,7 @@ public class programmers23_1 {
         for(int i = 0; i < sb.length(); i++) {
             answer[i] = Character.getNumericValue(sb.charAt(i));
         }
-        System.out.println(Arrays.toString(answer));
+
         return answer;
     }
 }
