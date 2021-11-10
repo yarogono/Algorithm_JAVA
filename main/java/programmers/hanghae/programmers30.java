@@ -39,6 +39,7 @@ public class programmers30 {
         return answer;
     }
 
+    // 테스트를 위해 만든 메인함수
     public static void main(String[] args) {
         programmers30 test = new programmers30();
         int[][] sizes = {{ 14, 4 }, { 19, 6}, { 6, 16 }, { 18, 7 }, { 7, 11 }};
