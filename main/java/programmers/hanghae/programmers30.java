@@ -1,7 +1,5 @@
 package programmers.hanghae;
 
-import java.util.Arrays;
-
 public class programmers30 {
     // 프로그래머스 최소직사각형 => https://programmers.co.kr/learn/courses/30/lessons/86491
     public int solution(int[][] sizes) {
