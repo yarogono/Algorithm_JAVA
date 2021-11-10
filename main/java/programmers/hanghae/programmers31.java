@@ -1,8 +1,6 @@
 package programmers.hanghae;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class programmers31 {
     // 프로그래머스 같은 숫자는 싫어 => https://programmers.co.kr/learn/courses/30/lessons/12906
