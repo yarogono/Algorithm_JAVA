@@ -17,9 +17,11 @@ public class programmers34 {
         int[] scores = { 0, 0, 0 };
 
         // 수포자들의 답과 실제 답을 비교해 맞은 개수 각 변수에 저장 맞은 개수를 배열(scores)에 저장한다.
-        scores[0] = checkNumMatch(personOne, answers);
-        scores[1] = checkNumMatch(personTwo, answers);
-        scores[2] = checkNumMatch(personThree, answers);
+        for(int i = 0; i < answers.length; i++){
+            if(personOne[i % 5] == answers[i]){ scores[0]++;}
+            if(personTwo[i % 8] == answers[i]){ scores[1]++;}
+            if(personThree[i % 10] == answers[i]){ scores[2]++;}
+        }
 
 
         // scores배열을 새로운 배열인 arr로 복사한다.
@@ -46,18 +48,6 @@ public class programmers34 {
 
         return answer;
     }
-
-    // 정답(answers)과 수포자(person)의 숫자가 같으면 count++ => 수포자가 맞춘 횟수
-    private int checkNumMatch(int[] person, int[] answers) {
-        int count = 0;
-        for(int i = 0; i < answers.length; i++) {
-            if(answers[i] == person[i]) {
-                count++;
-            }
-        }
-        return count;
-    }
-
 
     // 테스트용 메인 메서드
     public static void main(String[] args) {
