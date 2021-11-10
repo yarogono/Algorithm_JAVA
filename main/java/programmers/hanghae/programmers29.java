@@ -6,8 +6,8 @@ public class programmers29 {
         // 입력: 자연수 n이 매개변수로 주어집니다.
         int answer = 0;
         StringBuffer sb = new StringBuffer();
-        // 처리1: n을 3진법 변경, 3진법을 앞뒤로 뒤집기
 
+        // 처리1: n을 3진법 변경, 3진법을 앞뒤로 뒤집기
         while(n > 0) {
             sb.append(n % 3);
             n /= 3;
