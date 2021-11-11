@@ -10,7 +10,7 @@ public class programmers09 {
 
         StringBuffer sb = new StringBuffer();
 
-        for(int i = 0; i < frondStr.length(); i++) {
+        for(int i = 0; i < frontStr.length(); i++) {
             sb.append("*");
         }
 
