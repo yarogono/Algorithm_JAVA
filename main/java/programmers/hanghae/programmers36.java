@@ -33,6 +33,7 @@ public class programmers36 {
         return answer;
     }
 
+    // 테스트용 메인 메서드
     public static void main(String[] args) {
         programmers36 test = new programmers36();
         String s = "Zbcdefg";
