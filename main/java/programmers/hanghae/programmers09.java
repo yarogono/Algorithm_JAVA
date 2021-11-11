@@ -6,7 +6,7 @@ public class programmers09 {
         String answer = "";
 
         String backStr = phone_number.substring(phone_number.length()-4, phone_number.length());
-        String frondStr = phone_number.substring(0, phone_number.length() - 4);
+        String frontStr = phone_number.substring(0, phone_number.length() - 4);
 
         StringBuffer sb = new StringBuffer();
 
