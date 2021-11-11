@@ -27,6 +27,7 @@ public class programmers40 {
         return answer;
     }
 
+    // 테스트용 메인 메서드
     public static void main(String[] args) {
         programmers40 test = new programmers40();
         String new_id = "...!@BaT#*..y.abcdefghijklm";
