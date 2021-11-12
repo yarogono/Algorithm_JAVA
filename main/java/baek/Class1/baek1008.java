@@ -1,4 +1,4 @@
-package baek;
+package baek.Class1;
 
 import java.util.Scanner;
 
