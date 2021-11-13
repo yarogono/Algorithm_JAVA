@@ -12,7 +12,7 @@ public class programmers17 {
 
         for(int i = 0; i < s.length(); i++) {
             char tempChar = s.charAt(i);
-            if(Character.getNumericValue(tempChar) >= 10) {
+            if(Character.getNumericValue(tempChar) > 9) {
                 answer = false;
                 break;
             }
