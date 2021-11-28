@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class baek2675 {
+    // baek 2675 : https://www.acmicpc.net/problem/2675
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
