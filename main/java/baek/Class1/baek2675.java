@@ -1,7 +1,5 @@
 package baek.Class1;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class baek2675 {
@@ -10,7 +8,6 @@ public class baek2675 {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
-        List<String> resultList = new ArrayList<>();
         StringBuffer sb = new StringBuffer();
         for(int i = 0; i < t; i++) {
             int r = sc.nextInt();
@@ -20,13 +17,8 @@ public class baek2675 {
                     sb.append(tempStr.charAt(j));
                 }
             }
-
-            resultList.add(sb.toString());
+            System.out.println(sb);
             sb.delete(0, sb.length());
-        }
-
-        for (String tempStr : resultList) {
-            System.out.println(tempStr);
         }
     }
 }
