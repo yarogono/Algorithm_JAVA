@@ -13,17 +13,16 @@ public class baek2675 {
         StringBuffer sb = new StringBuffer();
         for(int i = 0; i < t; i++) {
             int r = sc.nextInt();
-            String tempStr = sc.nextLine();
+            String tempStr = sc.nextLine().trim();
             for(int j = 0; j < tempStr.length(); j++) {
                 for(int k = 0; k < r; k++) {
                     sb.append(tempStr.charAt(j));
                 }
             }
 
-            resultList.add(sb.toString().trim());
+            resultList.add(sb.toString());
             sb.delete(0, sb.length());
         }
-
 
         for (String tempStr : resultList) {
             System.out.println(tempStr);
