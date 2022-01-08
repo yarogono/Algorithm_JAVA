@@ -3,6 +3,7 @@ package baek.Class1;
 import java.util.Scanner;
 
 public class baek2920 {
+    // baek 2920 : https://www.acmicpc.net/problem/2920
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] numArr = new int[8];
