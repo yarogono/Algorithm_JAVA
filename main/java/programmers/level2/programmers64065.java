@@ -7,8 +7,10 @@ import java.util.Comparator;
 
 class Solution {
     public int[] solution(String s) {
+        // 가장 앞의 {{ 과 뒤에 있는 }}을 제거합니다.
         s = s.substring(2, s.length() - 2).replace("{", "");
 
+        // 문자열을 }, 기준으로 split 해서 문자배열 t 에 할당해줍니다.
         String[] t = s.split("},");
         // compare 메서드 오버라이딩을 통한 재정립
         // - 문자열의 길이가 짧은 순서대로 정렬
