@@ -5,8 +5,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Solution {
-    public int[] solution(String s) {
+
+
+public class programmers64065 {
+    public static void main(String[] args) {
+        String s = "{{4,2,3},{3},{2,3,4,1},{2,3}}";
+        solution(s);
+    }
+
+    public static int[] solution(String s) {
         // 가장 앞의 {{ 과 뒤에 있는 }}을 제거합니다.
         s = s.substring(2, s.length() - 2).replace("{", "");
 
@@ -42,13 +49,5 @@ class Solution {
         }
 
         return answer;
-    }
-}
-
-public class programmers64065 {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        String s = "{{4,2,3},{3},{2,3,4,1},{2,3}}";
-        solution.solution(s);
     }
 }
