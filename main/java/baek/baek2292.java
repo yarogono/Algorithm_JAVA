@@ -3,7 +3,7 @@ package baek;
 import java.util.Scanner;
 
 public class baek2292 {
-    // baek 1193 : https://www.acmicpc.net/problem/2292
+    // baek 2292 : https://www.acmicpc.net/problem/2292
     public static void main(String[] args) {
         int cnt = 1, numsPileup = 1;
         Scanner sc = new Scanner(System.in);
