@@ -11,7 +11,7 @@ public class baek2480 {
         int result = 0;
         for(int i = 0; i < inputStrArr.length; i++) {
 
-            int testNum = 0;
+            int sameNum = 0;
             int tempNum = Integer.parseInt(inputStrArr[i]);
             int maxNum = 0;
             for(int j = 0; j < inputStrArr.length; j++) {
@@ -21,14 +21,14 @@ public class baek2480 {
                 }
 
                 if(tempNum == jNum) {
-                    testNum++;
+                    sameNum++;
                 }
             }
 
-            if(testNum == 3) {
+            if(sameNum == 3) {
                 result = 10000 + tempNum * 1000;
                 break;
-            } else if(testNum == 2) {
+            } else if(sameNum == 2) {
                 result = 1000 + tempNum * 100;
                 break;
             } else {
