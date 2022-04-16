@@ -6,23 +6,37 @@ public class baek2480 {
     // baek 2480 : https://www.acmicpc.net/problem/2480
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         String[] inputStrArr = sc.nextLine().split(" ");
 
+        CalcDice calcDice = new CalcDice();
+
+        int result = calcDice.calcMethod(inputStrArr);
+
+        System.out.println(result);
+    }
+}
+
+class CalcDice {
+
+    public int calcMethod(String[] inputStrArr) {
         int result = 0;
-        for(int i = 0; i < inputStrArr.length; i++) {
+
+        int[] intArr = strArrayToIntArray(inputStrArr);
+
+        for(int i = 0; i < intArr.length; i++) {
 
             int sameNum = 0;
-            int tempNum = Integer.parseInt(inputStrArr[i]);
+            int tempNum = intArr[i];
             int maxNum = 0;
-            for(int j = 0; j < inputStrArr.length; j++) {
-                int jNum = Integer.parseInt(inputStrArr[j]);
-                if(maxNum < jNum) {
-                    maxNum = jNum;
-                }
+            for(int j = 0; j < intArr.length; j++) {
+                int jNum = intArr[j];
 
-                if(tempNum == jNum) {
+                if(maxNum < jNum)
+                    maxNum = jNum;
+
+                if(tempNum == jNum)
                     sameNum++;
-                }
             }
 
             if(sameNum == 3) {
@@ -35,7 +49,19 @@ public class baek2480 {
                 result = maxNum * 100;
             }
         }
+        return result;
+    }
 
-        System.out.println(result);
+
+    private int[] strArrayToIntArray(String[] inputStrArr) {
+        int strArrLength = inputStrArr.length;
+
+        int[] intArr = new int[strArrLength];
+
+        for(int i = 0; i < strArrLength; i++) {
+            intArr[i] = Integer.parseInt(inputStrArr[i]);
+        }
+
+        return intArr;
     }
 }
