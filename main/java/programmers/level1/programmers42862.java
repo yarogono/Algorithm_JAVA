@@ -13,11 +13,30 @@ public class programmers42862 {
 
         System.out.println(solution(n, lost, reserve));
 
-
     }
 
     public static int solution(int n, int[] lost, int[] reserve) {
         int answer = 0;
+
+        n -= lost.length;
+
+        for(int i = 0; i < reserve.length; i++) {
+
+            for(int j = 0; j < lost.length; j++) {
+
+                if(lost[j] == reserve[i] - 1) {
+                    n++;
+                    break;
+                } else if(lost[j] == reserve[i] + 1) {
+                    n++;
+                    break;
+                } else {
+                    break;
+                }
+            }
+        }
+
+        answer = n;
         return answer;
     }
 
