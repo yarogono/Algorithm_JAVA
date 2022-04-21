@@ -12,6 +12,8 @@ public class programmers42862 {
         int[] reserve = new int[]{1, 3, 5};
 
         System.out.println(solution(n, lost, reserve));
+
+
     }
 
     public static int solution(int n, int[] lost, int[] reserve) {
